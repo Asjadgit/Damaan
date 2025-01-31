@@ -8,6 +8,7 @@ import AppLayout from './Layouts/AppLayout'
 import HeroSection from './Layouts/MainComponents'
 import About from './Pages/About'
 import Contact from './Pages/Contact'
+import Login from './Pages/Login';
 
 function App() {
 
@@ -27,7 +28,11 @@ function App() {
         {
           path: "Contact",
       element: <Contact />,
-        }
+        },
+        {
+          path: "Login",
+      element: <Login />,
+        },
       ]
     },
 
