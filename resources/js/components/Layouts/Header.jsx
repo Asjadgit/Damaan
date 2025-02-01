@@ -93,12 +93,12 @@ const Header = () => {
           id="mobile-nav-toggle"
         ></button>
 
-        <a
-          href="index.html#about"
+        <NavLink
+          to='Login'
           className="hidden md:inline-block px-4 py-2 mr-6 text-white bg-blue-600 rounded-full hover:bg-blue-700"
         >
           Get Started
-        </a>
+        </NavLink>
       </div>
     </header>
   );
