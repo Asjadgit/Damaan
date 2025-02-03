@@ -14,13 +14,13 @@ const Footer = () => {
             >
               Damman College of IT
             </a>
-            <p>Address: A108 Adam Street</p>
-            <p>New York, NY 535022</p>
+            <p>Address: 2nd Floor Ashiyana Shoping Center </p>
+            <p>Der Ismail khan</p>
             <p className="mt-3">
-              <strong>Phone:</strong> +1 5589 55488 55
+              <strong>Phone:</strong> +92 33 24643642
             </p>
             <p>
-              <strong>Email:</strong> info@example.com
+              <strong>Email:</strong> Damaan@info.gmail.com
             </p>
             <div className="flex space-x-3 mt-4">
               <a
