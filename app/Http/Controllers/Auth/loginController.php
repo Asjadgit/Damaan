@@ -1,28 +1,29 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Auth;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
 
-class TestingController extends Controller
+class loginController extends Controller
 {
-  
-   
+
+    
+
     public function login(request $request){
-      
-        $user = $request ->validate([
-            "email"=>"email|required",
-            "password"=>"required"
-        ]);
-        if(Auth::attempt($user)){
+        $email = $request->email;
+        $password =$request->password;
+
+        $user=User::where('email' , $email )->first();
+
+        if(Auth::attempt($user))   {
+
             return redirect()->route('/*');
         }else{
             return redirect()->route('login');
-        }
-        
-       
+            }
     }
 
     public function logout(){
@@ -30,7 +31,4 @@ class TestingController extends Controller
         return redirect()->route('login');
     }
 
-  
-
-    
 }
